@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.div-navBar {
+width: 100%;
+background-color: black;
+}
+
+div .nav-main {
+    display: flex;
+}
+
+div nav.nav-main ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+div nav.nav-main ul li {
+    list-style: none;
+}

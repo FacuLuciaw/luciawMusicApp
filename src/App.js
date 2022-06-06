@@ -1,22 +1,22 @@
-import logo from './logo.svg';
+import logoImg from './img/logofacu.png';
+import NavBar from './components/NavBar/NavBar';
 import './App.css';
 
+
 function App() {
+
+  const stylesH1 = {
+    color: "cyan",
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bienvenidos a LuciaMusicApp
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar/>
+        <h1 style={stylesH1}> Bienvenidos a LuciawMusicApp </h1>
+        <img alt="logo" src={ logoImg } />
+        <p>Bienvenidos a LuciawMusicApp</p>
+
       </header>
     </div>
   );
