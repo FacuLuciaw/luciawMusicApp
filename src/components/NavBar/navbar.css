@@ -24,3 +24,7 @@ div nav.nav-main ul {
 div nav.nav-main ul li {
     list-style: none;
 }
+
+div nav.nav-main ul img {
+    width: 2.5rem;
+}
