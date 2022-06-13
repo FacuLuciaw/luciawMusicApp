@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+div header h1.h1-titulo {
+color: cyan;
+}

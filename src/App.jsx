@@ -5,15 +5,11 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
 
-  const stylesH1 = {
-    color: "cyan",
-  }
-
   return (
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <h1 style={stylesH1}> Bienvenidos a LuciawMusicApp </h1>
+        <h1 className='h1-titulo'> Bienvenidos a LuciawMusicApp </h1>
         <img alt="logo" src={ logoImg } />
         <ItemListContainer/>
       </header>
