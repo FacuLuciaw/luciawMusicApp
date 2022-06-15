@@ -1,0 +1,22 @@
+div.container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.nombre-item {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+div.container-item img {
+    width: 25rem;
+    border-radius: 4rem;
+}
+
+p.precio-item {
+    color: white;
+    font-size: 2rem;
+}
+

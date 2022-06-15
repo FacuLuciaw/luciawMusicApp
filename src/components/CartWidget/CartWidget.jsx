@@ -1,4 +1,4 @@
-import WidgetCarrito from '../img/carrito.png';
+import WidgetCarrito from '../../img/carrito.png';
 
 export default function CartWidget () {
     

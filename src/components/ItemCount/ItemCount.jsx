@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function ItemCount({ stock, initial}) {
+function ItemCount({ stock, initial }) {
 
     const [count, setCount] = useState(initial);
 
