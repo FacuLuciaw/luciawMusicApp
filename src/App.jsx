@@ -1,7 +1,8 @@
 import logoImg from './img/logofacu.png';
 import NavBar from './components/NavBar/NavBar';
 import './App.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+// import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
         <NavBar/>
         <h1 className='h1-titulo'> Bienvenidos a LuciawMusicApp </h1>
         <img alt="logo" src={ logoImg } />
-        <ItemListContainer/>
+        {/* <ItemListContainer/> */}
+        <ItemDetailContainer/>
       </header>
     </div>
   );

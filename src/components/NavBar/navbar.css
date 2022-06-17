@@ -1,12 +1,13 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 div.div-navBar {
 width: 100%;
-background-color: black;
+padding-top: 2rem;
+padding-bottom: 5rem;
 }
 
 div .nav-main {
@@ -22,6 +23,12 @@ div nav.nav-main ul {
 }
 
 div nav.nav-main ul li {
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    font-size: 2rem;
     list-style: none;
 }
 

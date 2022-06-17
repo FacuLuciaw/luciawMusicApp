@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import '../ItemCount/itemCount.css'
 
 function ItemCount({ stock, initial }) {
 
@@ -21,7 +22,7 @@ function ItemCount({ stock, initial }) {
     }
 
     return (
-        <div>
+        <div className='contador-container'>
             
             <button onClick={resta}>-</button>
             <span>{count}</span>
