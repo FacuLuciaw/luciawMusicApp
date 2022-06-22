@@ -1,23 +1,32 @@
-import '../Item/item.css'
 import ItemCount from '../ItemCount/ItemCount'
+import '../Item/item.css'
+import { Link } from 'react-router-dom';
 
-const Item = ({nombre, foto, precio, descripcion}) => {
+const Item = ({id, nombre, foto, precio}) => {
+
+const urlDetalle = `/item/${id}`
 
     return (
+ 
+        <section className='container-item'>
 
-            <div className='container-item'>
+            <div className='info-item'>
+
+                <img src={foto} alt="img" />    
 
                 <h2 className='nombre-item'>{nombre}</h2>
 
-                <img src={foto} alt="img" />
-
                 <p className='precio-item'>${precio}</p>
-
-                <p className='desc-item'>{descripcion}</p>
 
                 <ItemCount stock={10} initial={1} />
 
+                <Link to={urlDetalle}>
+                    <button>Ver Detalle</button>
+                </Link>
+
             </div>
+
+        </section>
 
     )
 }
