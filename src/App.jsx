@@ -1,13 +1,15 @@
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import logoImg from './img/logofacu.png';
 import NavBar from './components/NavBar/NavBar';
-import './App.css';
+import Cart from "./components/Cart/Cart";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import './App.css';
 
 function App() {
 
   return (
+
     <div className="App">
 
       <header className="App-header">
@@ -23,19 +25,23 @@ function App() {
           <Routes>
 
             <Route path="/" element={<ItemListContainer greeting="Catalogo de productos"/>} />
-            
+
             <Route path="/category/:categoryId" element={<ItemListContainer greeting="Categoria producto"/>}/>
-            
+
+            <Route path="/cart" element={<Cart/>} />
+
             <Route path="/item/:id" element={<ItemDetailContainer greeting="Detalle producto"/>} />
 
           </Routes>
 
         </BrowserRouter>
-      
+
       </header>
-    
+
     </div>
+
   );
+
 }
 
 export default App;

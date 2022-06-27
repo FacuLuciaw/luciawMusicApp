@@ -1,13 +1,13 @@
+import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount'
 import '../Item/item.css'
-import { Link } from 'react-router-dom';
 
 const Item = ({id, nombre, foto, precio}) => {
 
 const urlDetalle = `/item/${id}`
 
     return (
- 
+
         <section className='container-item'>
 
             <div className='info-item'>

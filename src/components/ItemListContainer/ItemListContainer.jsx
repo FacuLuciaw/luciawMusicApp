@@ -1,6 +1,6 @@
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
-import { useParams } from "react-router-dom";
 import { articles } from "../../ArticlesList";
 
 export default function ItemListContainer() {
