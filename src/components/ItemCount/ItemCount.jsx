@@ -6,19 +6,19 @@ function ItemCount({ stock, initial, onAdd }) {
     const [count, setCount] = useState(initial);
 
     function suma() {
-        if (count < stock) {
-        setCount(count + 1)
-        }
-        
-        else{
-        alert('No hay mas stock')
-        }
+
+        (count < stock)
+
+        ? setCount(count + 1)
+
+        : alert('Stock superado')
+
     }
 
     function resta() {
-        if (count > initial) {
-        setCount(count - 1)
-        }
+
+        (count > initial) && setCount(count - 1)
+
     }
 
     return (
@@ -27,7 +27,9 @@ function ItemCount({ stock, initial, onAdd }) {
         <div className='contador-container'>
             
             <button onClick={resta}>-</button>
+
             <span>{count}</span>
+            
             <button onClick={suma}>+</button>
             
         </div>

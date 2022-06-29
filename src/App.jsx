@@ -1,9 +1,9 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import logoImg from './img/logofacu.png';
+import { CartProvider } from "./context/CartContext";
 import NavBar from './components/NavBar/NavBar';
 import Cart from "./components/Cart/Cart";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
         <h1 className='h1-titulo'> Bienvenidos a LuciawMusicApp </h1>
 
-        <img alt="logo" src={ logoImg } />
+        <CartProvider>
 
         <BrowserRouter>
 
@@ -35,6 +35,8 @@ function App() {
           </Routes>
 
         </BrowserRouter>
+
+        </CartProvider>
 
       </header>
 
