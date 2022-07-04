@@ -33,12 +33,15 @@ export const ItemDetail = ({ item, stock }) => {
 
                 <p className='desc-detail-item'>{item.descripcion}</p>
 
-            </div>
+                { (cant === 0)
 
-            { (cant === 0)
-            ?<ItemCount onAdd={onAdd} stock={10} initial={1} />
-            :<Link to="/cart">Ir al Carrito</Link>
-            }
+                    ?<ItemCount onAdd={onAdd} stock={10} initial={1} />
+
+                    :<Link to="/cart">Ir al Carrito</Link>
+
+                }
+
+            </div>
 
         </section>
 

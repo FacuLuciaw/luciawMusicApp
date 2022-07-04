@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom'; 
 import "../Cart/cart.css";
 
 const Cart = () => {
@@ -8,13 +9,26 @@ const Cart = () => {
 
     if (cart.length === 0) {
 
-        return <h1 className="text-center">El carrito esta vacio</h1>
+        return (
+
+            <>
+
+            <div>
+
+                <h1>El carrito esta vacio</h1>
+                <Link to="/">Volver al Inicio</Link>
+
+            </div>
+
+            </>
+
+)
 
     }
 
     return (
 
-        <div key={cart.id}>
+        <div>
 
     {
 
@@ -41,6 +55,8 @@ const Cart = () => {
         <p>Total de la compra: ${totalCost()}</p>
 
         <button onClick={clearCart}>Vaciar Carrito</button>
+
+        <button>Comprar</button>
 
     </div>
 

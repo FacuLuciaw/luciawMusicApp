@@ -33,8 +33,6 @@ export default function ItemDetailContainer() {
     
         <>
 
-            <h2>Bienvenido a LuciawMusic (Provisorio) </h2>
-
             <ItemDetail item= {Articulo} />
 
         </>

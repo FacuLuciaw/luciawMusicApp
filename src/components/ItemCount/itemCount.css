@@ -1,23 +1,37 @@
 div.contador-container {
+
+    height: 3.2rem;
+    width: 7rem;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    color: white;
+
     border: 2px;
-    border-style: solid;
     border-radius: 1.5rem;
+    border-style: solid;
+
+    color: white;
+
 }
 
 div.contador-container button {
-width: 1rem;
-border-radius: 0.5rem;
+
+    width: 1rem;
+
+    border-radius: 0.5rem;
+
 }
 
 div.contador-container span {
+
     font-size: 2rem;
+
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.2rem;
+
     color: white;
+
 }

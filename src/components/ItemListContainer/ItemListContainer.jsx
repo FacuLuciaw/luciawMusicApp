@@ -37,8 +37,6 @@ export default function ItemListContainer() {
     
         <>
 
-            <h2>Bienvenido a LuciawMusic (Provisorio) </h2>
-
             <ItemList items={Articulos} />
 
         </>

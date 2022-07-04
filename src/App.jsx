@@ -38,7 +38,7 @@ function App() {
 
         </CartProvider>
 
-      </header>
+        </header>
 
     </div>
 

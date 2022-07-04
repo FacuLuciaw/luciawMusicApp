@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import ItemCount from '../ItemCount/ItemCount'
 import '../Item/item.css'
 
 const Item = ({id, nombre, foto, precio}) => {
@@ -7,6 +6,8 @@ const Item = ({id, nombre, foto, precio}) => {
 const urlDetalle = `/item/${id}`
 
     return (
+
+    <div className='grid-container'>
 
         <section className='container-item'>
 
@@ -18,17 +19,20 @@ const urlDetalle = `/item/${id}`
 
                 <p className='precio-item'>${precio}</p>
 
-                <ItemCount stock={10} initial={1} />
-
                 <Link to={urlDetalle}>
-                    <button>Ver Detalle</button>
+
+                    <button className='detalle-item'>Ver Detalle</button>
+
                 </Link>
 
             </div>
 
         </section>
 
+    </div>
+
     )
+
 }
 
 export default Item 
