@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import { useState, useEffect } from "react";
-import { articles } from "../../ArticlesList";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { traerUnPorducto } from "../../services/firestore";
 
 export default function ItemDetailContainer() {
 
@@ -10,18 +10,9 @@ export default function ItemDetailContainer() {
     const { id } = useParams();
 
     useEffect(() =>{
-        const getArticle = new Promise((resolve, reject) =>{
-            setTimeout(() =>{
 
-                const itemFound = articles.find(item =>{
-                    return item.id === parseInt(id);
-                });
-
-            resolve(itemFound);
-            }, 2000);
-
-        });
-        getArticle.then((resolve) =>{
+        traerUnPorducto( id )
+        .then((resolve) =>{
             setArticulo(resolve);
         }).catch((error) => {
             console.log(error);
