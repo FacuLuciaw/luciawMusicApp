@@ -11,8 +11,6 @@ const urlDetalle = `/item/${id}`
 
         <section className='container-item'>
 
-            <div className='info-item'>
-
                 <img src={foto} alt="img" />    
 
                 <h2 className='nombre-item'>{nombre}</h2>
@@ -24,8 +22,6 @@ const urlDetalle = `/item/${id}`
                     <button className='detalle-item'>Ver Detalle</button>
 
                 </Link>
-
-            </div>
 
         </section>
 

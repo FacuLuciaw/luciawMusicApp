@@ -8,7 +8,9 @@ export const CartProvider = ({ children, id }) => {
 const [cart, setCart] = useState([]);
 
 useEffect(() => {
+
     console.log(cart);
+
 }, [cart]);
 
 const addToCart = (item, qty) => {

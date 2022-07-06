@@ -7,20 +7,30 @@
 
 }
 
-section.container-item {
-
-    height: 100rem;
-    width: 118.9rem;
+.grid-container {
 
     display: inline-flex;
 
-    justify-content: center;
+    justify-content: space-around;
 
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 2rem;
 
 }
 
-section.container-item img {
+
+.container-item {
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+
+.container-item img {
 
     width: 25.5rem;
 
@@ -30,31 +40,12 @@ section.container-item img {
 
 }
 
-div.info-item {
-
-    height: 60rem;
-    width: 30rem;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-    padding: 2rem;
-
-    border: 2px;
-    border-radius: 1.5rem;
-    border-style: solid;
-
-    color: white;
-
-}
 
 h2.nombre-item {
 
-    padding: 2rem;
+    padding: 1rem;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 
     text-align: center;
@@ -63,15 +54,17 @@ h2.nombre-item {
 
 }
 
+
 p.precio-item {
 
-    padding: 2rem;
+    padding: 1rem;
 
     font-size: 1.5rem;
 
     color: white;
 
 }
+
 
 button.detalle-item {
 
@@ -85,4 +78,4 @@ button.detalle-item {
     color: white;
     background-color: black;
 
-}
+}   

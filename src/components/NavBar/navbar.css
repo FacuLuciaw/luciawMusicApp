@@ -7,6 +7,7 @@
 
 }
 
+
 div.div-navBar {
 
     width: 100%;
@@ -16,11 +17,13 @@ div.div-navBar {
 
 }
 
+
 div .nav-main {
 
     display: flex;
 
 }
+
 
 div nav.nav-main ul {
 
@@ -28,30 +31,28 @@ div nav.nav-main ul {
 
     display: flex;
 
-    align-items: center;
     justify-content: space-around;
 
     text-decoration: none;
 
 }
 
+
 div nav.nav-main ul li {
 
     padding: 0.2rem;
 
     font-size: 2rem;
+
     list-style: none;
-
-    border: 2px;
-    border-radius: 1rem;
-    border-style: solid;
-
-    color: white;
 
 }
 
-div nav.nav-main ul li  a {
+
+div nav.nav-main ul li a, i {
 
     text-decoration: none;
+
+    color: white;
 
 }

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getItems } from "../../services/firestore";
 import { ItemList } from "../ItemList/ItemList";
+import '../ItemListContainer/itemListContainer.css'
 
 export default function ItemListContainer() {
 
@@ -22,10 +23,10 @@ export default function ItemListContainer() {
 
     return (
     
-        <>
+        <div className="container-itemListContainer">
 
             <ItemList items={Articulos} />
 
-        </>
+        </div>
     )
 }

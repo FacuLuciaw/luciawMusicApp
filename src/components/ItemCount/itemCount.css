@@ -1,3 +1,14 @@
+section.container-botones {
+
+    width: 30rem;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+
 div.contador-container {
 
     height: 3.2rem;
@@ -33,5 +44,25 @@ div.contador-container span {
     padding-bottom: 0.2rem;
 
     color: white;
+
+}
+
+div.agregar-container button {
+
+    height: 3.2rem;
+    width: 7rem;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px;
+    border-radius: 1.5rem;
+    border-style: solid;
+
+    color: white;
+
+    background-color: black;
 
 }

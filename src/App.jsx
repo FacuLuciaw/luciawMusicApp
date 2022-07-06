@@ -1,16 +1,16 @@
-import { CartProvider } from "./context/CartContext";
 import NavBar from './components/NavBar/NavBar';
-import Cart from "./components/Cart/Cart";
+import Cart from './components/Cart/Cart';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
 
   return (
 
-    <div className="App">
+    <div className='App'>
 
       <header className="App-header">
 
@@ -18,27 +18,27 @@ function App() {
 
         <CartProvider>
 
-        <BrowserRouter>
+          <BrowserRouter>
 
-          <NavBar/>
+            <NavBar/>
 
-          <Routes>
+            <Routes>
 
-            <Route path="/" element={<ItemListContainer greeting="Catalogo de productos"/>} />
+              <Route path='/' element={<ItemListContainer greeting='Catalogo de productos'/>} />
 
-            <Route path="/category/:categoryId" element={<ItemListContainer greeting="Categoria producto"/>}/>
+              <Route path='/category/:categoryId' element={<ItemListContainer greeting='Categoria producto'/>} />
 
-            <Route path="/cart" element={<Cart/>} />
+              <Route path='/cart' element={<Cart/>} />
 
-            <Route path="/item/:id" element={<ItemDetailContainer greeting="Detalle producto"/>} />
+              <Route path='/item/:id' element={<ItemDetailContainer greeting='Detalle producto'/>} />
 
-          </Routes>
+            </Routes>
 
-        </BrowserRouter>
+          </BrowserRouter>
 
         </CartProvider>
 
-        </header>
+      </header>
 
     </div>
 
@@ -46,4 +46,4 @@ function App() {
 
 }
 
-export default App;
+export default App

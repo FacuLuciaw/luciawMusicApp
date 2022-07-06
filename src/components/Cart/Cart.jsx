@@ -11,16 +11,14 @@ const Cart = () => {
 
         return (
 
-            <>
+            <div className='alerta-carrito'>
 
-            <div>
+                <h2>El carrito esta vacio</h2>
 
-                <h1>El carrito esta vacio</h1>
-                <Link to="/">Volver al Inicio</Link>
+                <Link to="/"> <button type="button" class="btn btn-dark">Volver al inicio</button> </Link>
 
             </div>
 
-            </>
 
 )
 
@@ -28,35 +26,43 @@ const Cart = () => {
 
     return (
 
-        <div>
+        <div className='container-cart'>
 
     {
 
         cart.map((item) => (
 
-        <div className='cart'>
-
-            <h1>{item.nombre}</h1>
+        <div className='info-cart'>
 
             <img src={item.foto} alt="img" />
 
+            <h2>{item.nombre}</h2>
+
             <p>${item.precio}</p>
 
-            <button onClick={()=>{removeItem(item.id)}}>X</button>
-
             <p>Cantidad: {item.qty}</p>
+
+            <button type="button" class="btn btn-danger" onClick={()=>{removeItem(item.id)}}>Eliminar elemento</button>
 
         </div>
 
         ))
 
-    };
+    }
 
-        <p>Total de la compra: ${totalCost()}</p>
+        <span className='total-cart'>
 
-        <button onClick={clearCart}>Vaciar Carrito</button>
+            <p>Total de la compra: ${totalCost()}</p>
 
-        <button>Comprar</button>
+        </span>
+
+        <div className='botones-cart'>
+
+            <button type="button" class="btn btn-danger" onClick={clearCart}>Vaciar carrito</button>
+
+            <button type="button" class="btn btn-primary">Finalizar compra</button>
+
+        </div>
 
     </div>
 
