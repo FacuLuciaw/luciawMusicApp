@@ -29,7 +29,7 @@ export const articles = [
 
     {
         "id": 4,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo Nirvana",
         "precio": 7500,
         "foto": "../img/buzo-nirvana-hombre.jpg",
@@ -38,7 +38,7 @@ export const articles = [
 
     {
         "id": 5,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo Rolling Stones",
         "precio": 7500,
         "foto": "../img/buzo-rolling-hombre.jpg",
@@ -47,7 +47,7 @@ export const articles = [
 
     {
         "id": 6,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo Ramones",
         "precio": 7500,
         "foto": "../img/buzo-ramones-hombre.jpg",
@@ -56,7 +56,7 @@ export const articles = [
 
     {
         "id": 7,
-        "tipo": "Remera",
+        "category": "Remera",
         "nombre": "Remera AC/DC",
         "precio": 5000,
         "foto": "../img/remera-acdc-mujer.jpg" ,
@@ -65,7 +65,7 @@ export const articles = [
 
     {
         "id": 8,
-        "tipo": "Remera",
+        "category": "Remera",
         "nombre": "Remera Black Sabath",
         "precio": 5000,
         "foto": "../img/remera-blacksabath-mujer.jpg",
@@ -74,7 +74,7 @@ export const articles = [
 
     {
         "id": 9,
-        "tipo": "Remera",
+        "category": "Remera",
         "nombre": "Remera Guns and Roses",
         "precio": 5000,
         "foto": "../img/camisa-guns-mujer.jpg",
@@ -83,7 +83,7 @@ export const articles = [
 
     {
         "id": 10,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo Ramones",
         "precio": 7500,
         "foto": "../img/buzo-ramones-mujer.jpg",
@@ -92,7 +92,7 @@ export const articles = [
 
     {
         "id": 11,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo AC/DC",
         "precio": 7500,
         "foto": "../img/buzo-acdc-mujer.jpg",
@@ -101,7 +101,7 @@ export const articles = [
 
     {
         "id": 12,
-        "tipo": "Buzo",
+        "category": "Buzo",
         "nombre": "Buzo Pink FLoyd",
         "precio": 7500,
         "foto": "../img/buzo-pinkfloyd-mujer.jpg",
