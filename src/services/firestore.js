@@ -173,12 +173,7 @@ export async function exportDataToFirestore(){
 
         setDoc(newDoc, item).then (res =>{
 
-            console.log("Documento Guardado:", newDoc.id );
-
         })
-
-        .catch( ( error => console.log("Error obteniendo los datos:", error))
-        )
 
     })
 
@@ -201,8 +196,6 @@ export async function createBuyOrder( dataOrder ) {
         date: dateTimestamp
 
     };
-
-    console.log(dataOrderWithDate);
 
     const orderCreated = await addDoc(orderCollectionRef, dataOrderWithDate);
 

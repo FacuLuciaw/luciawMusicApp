@@ -14,9 +14,7 @@ export default function NavBar() {
 
                     <li> <NavLink to ='/'> Inicio </NavLink> </li>
 
-                    <li> <NavLink to ='/ropa'> Indumentaria </NavLink> </li>
-
-                    <li> <NavLink to ='/category/Remera'> Remeras </NavLink> </li>
+                    <li> <NavLink to ='/category/Remera'> Remera </NavLink> </li>
 
                     <li> <NavLink to ='/category/Buzo'> Buzos </NavLink> </li>
 
